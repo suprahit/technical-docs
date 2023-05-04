@@ -760,12 +760,6 @@ video {
     margin-top: 25rem;
   }
   .border-r-4 {
-<<<<<<< HEAD
-    border: 0;
-  }
-}
-=======
     border-right: 0;
   }
 }
->>>>>>> 693ce89f4e64f8f0f108a5f6201b3ae6ad2c1ee7
