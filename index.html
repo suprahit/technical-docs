@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-700">
+    <nav id="navbar"
+        class="fixed left-0 top-0 min-h-full z-1 w-72 text-center text-gray-200 border-r-4 border-gray-200 lg:w-full lg:h-72">
+        <header class="text-4xl border-b-4 w-full p-4">Python Start</header>
+        <ul class="text-xl">
+            <li class="border-b-2 p-4 hover:bg-gray-900"><a href="#Inicio" class="nav-link">Inicio</a></li>
+            <li class="border-b-2 p-4 hover:bg-gray-900"><a href="#Filosofia" class="nav-link">Filosofia</a></li>
+            <li class="border-b-2 p-4 hover:bg-gray-900"><a href="#Começando" class="nav-link">Começando</a></li>
+            <li class="border-b-2 p-4 hover:bg-gray-900"><a href="#Sintaxe_Python" class="nav-link">Sintaxe Python</a></li>
+            <li class="border-b-2 p-4 hover:bg-gray-900"><a href="#Variáveis" class="nav-link">Variáveis</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc" class="ml-80 absolute text-gray-200 pb-8">
+        <section class="main-section space-y-2 mt-4" id="Inicio">
+            <header class="text-3xl mx-7 ml-0 font-bold">Inicio</header>
+            <div class="mx-4 text-base space-y-2">
+                <p>Python é uma linguagem de programação orientada a objetos, interpretada, de tipagem
+                    dinâmica de alto nível com propósito geral. Foi lançada em 1991 por Guido van Rossum.</p>
+                <p>A linguagem foi projetada para priorizar a legibilidade do código sobre a velocidade ou
+                    expressividade. Combina uma sintaxe concisa e clara com os recursos poderosos de sua biblioteca
+                    padrão e por módulos e frameworks desenvolvidos por terceiros.</p>
+                <p>O nome Python teve a sua origem no grupo humorístico britânico Monty Python, criador do programa
+                    Monty Python's Flying Circus.</p>
+            </div>
+        </section>
+        <section class="main-section space-y-2 mt-8" id="Filosofia">
+            <header class="text-3xl mx-7 ml-0 font-bold">Filosofia</header>
+            <div class="mx-4 text-base space-y-2">
+                <p>O <i>Zen of Python</i> é uma coleção de 19 princípios orientadores, na forma de poema, com uma série
+                    de aforismos, para escrever programas de computador que influenciam o design da linguagem de
+                    progração Python.</p>
+                <p>Os príncipios que constam no Zen of Python são:</p>
+                <ul class="list-disc mx-6">
+                    <li>Bonito é melhor que feio.</li>
+                    <li>Explícito é melhor que implícito.</li>
+                    <li>Simples é melhor que complexo.</li>
+                    <li>Complexo é melhor que complicado.</li>
+                    <li>Linear é melhor que aninhado.</li>
+                    <li>Esparso é melhor que denso.</li>
+                    <li>Legibilidade conta.</li>
+                    <li>Casos especiais não são especiais o bastante para quebrar as regras.</li>
+                    <li>Ainda que praticidade vença a pureza.</li>
+                    <li>Erros nunca devem passar silenciosamente.</li>
+                    <li>A menos que sejam explicitamente silenciados.</li>
+                    <li>Diante da ambiguidade, recuse a tentação de adivinhar.</li>
+                    <li>Deve haver um - e preferencialmente apenas um - modo óbvio para fazer algo.</li>
+                    <li>Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês.</li>
+                    <li>Agora é melhor que nunca.</li>
+                    <li>Apesar de que nunca normalmente é melhor do que *exatamente* agora.</li>
+                    <li>Se a implementação é difícil de explicar, é uma má ideia.</li>
+                    <li>Se a implementação é fácil de explicar, pode ser uma boa ideia.</li>
+                    <li>Namespaces são uma grande ideia - vamos ter mais dessas!</li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section space-y-2 mt-8" id="Começando">
+            <header class="text-3xl mx-7 ml-0 font-bold">Começando</header>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">Instalação de Python</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>Para conferir se você tem python instalado no PC com Windows, procure na barra de pesquisa por Python
+                    ou coloque o seguinte comando no Prompt de Comando (cmd.exe):</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        C:\Users\Your Name>python --version 
+                    </code>
+                </div>
+                <p>Para conferir se você tem python instalado no Linux ou Mac, no linux abra o CLI ou no Mac abra o
+                    terminal e digite:</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        python --version
+                    </code>
+                </div>
+                <p>Se você não tiver Python instalado no computador, você pode baixá-lo de graça no <a
+                        href="https://www.python.org/" class="text-cyan-600">site oficial do python</a>.</p>
+            </div>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">Primeiro código</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>Python é uma linguagem de programação interpretada, isso significa que, como um desenvolvedor, você
+                    escreve arquivos Python (.py) em um editor de texto e então coloca esses arquivos em um
+                    interpretador de python para serem executados.
+                </p>
+                <p>Assim se executa o código python na interface de linha de comando:
+                </p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <p>helloworld.py</p>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        <span class="text-blue-500">print</span>(<span class="text-amber-700">"Hello, World!"</span>)
+                    </code>
+                </div>
+                <p>Simples assim. Salve o seu arquivo. Abra o terminal, navegue até o diretório que você salvou o seu
+                    arquivo e rode:</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        C:\Users\Your Name>python helloworld.py
+                    </code>
+                </div>
+                <p>A saída deverá ser:</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        Hello, World!
+                    </code>
+                </div>
+                <p>Você acaba de executar o seu primeiro programa Python!</p>
+            </div>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">A linha de comando Python</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>Para testar uma pequena quantidade de código em Python, talvez seja melhor escrever o código
+                    diretamente na linha de comando.</p>
+                <p>Digite o seguinte no Terminal:</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        C:\Users\Your Name>python
+                    </code>
+                </div>
+                <p>
+                    Ou, se o comando "python" não funcionou, tente "py":
+                </p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        C:\Users\Your Name>py
+                    </code>
+                </div>
+                <p>A partir daí, você pode escrever qualquer código python, incluindo o exemplo de hello world acima.
+                </p>
+                <p>Quando você terminar de testar seu código, digite "exit()" para sair da interface de linha de comando
+                    do python:</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        exit()
+                    </code>
+                </div>
+            </div>
+        </section>
+        <section class="main-section space-y-2 mt-8" id="Sintaxe_Python">
+            <header class="text-3xl mx-7 ml-0 font-bold">Sintaxe Python</header>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">Indentação Python</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>A indentação se refere à quantidade de espaços antes do começo de uma linha de código.</p>
+                <p>Em outras linguagens de programação, a indentação serve somente para legibilidade, mas no python, a
+                    indentação é muito importante, pois, o python usa a indentação para indicar um bloco de código.</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        <span class="text-blue-500">if</span> <span class="text-red-500">5</span> > <span class="text-red-500">2</span>:
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        &nbsp&nbsp<span class="text-blue-500">print</span>(<span class="text-amber-700">"Five is greater than two"</span>);
+                    </code>
+                </div>
+                <p>Python gerará um erro se você errar a indentação:</p>
+                <div class="bg-red-400 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                          <span class="text-blue-500">if</span> <span class="text-red-500">5</span> > <span class="text-red-500">2</span>:
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        <span class="text-blue-500">print</span>(<span class="text-amber-700">"Five is greater than two"</span>);
+                    </code>
+                </div>
+                <p>A quantidade de espaços fica por você, porém, não é recomendado utilizar mais de 4 espaços. O TAB
+                    também pode ser usado.</p>
+            </div>
+        </section>
+        <section class="main-section space-y-2 mt-8" id="Variáveis">
+            <header class="text-3xl mx-7 ml-0 font-bold">Variáveis</header>
+            <div class="mx-4 text-base space-y-2">
+                <p>Variáveis são um tipo de contêiner na memória para guardar valores</p>
+            </div>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">Criando variáveis</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>Python não possui um comando para declarar uma variável.</p>
+                <p>Uma variável é criada no momento que você declara um valor a ela.</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        x = <span class="text-red-500">5</span>
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        <span class="text-blue-500">print</span>(x);
+                    </code>
+                </div>
+                <p>No Python, você também, não precisa declarar nenhum tipo para a variável, e pode até mudar o tipo da
+                    variável depois que ele foi definido.</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        x = <span class="text-red-500">5</span>
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        x = <span class="text-amber-700">"Sally"</span>
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        <span class="text-blue-500">print</span>(x);
+                    </code>
+                </div>
+            </div>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">Casting</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>Se você quiser especificar o tipo de uma variável, você usará o casting.</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        x = <span class="text-blue-500">str</span>(<span class="text-red-500">5</span>)
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        x = <span class="text-blue-500">int</span>(<span class="text-red-500">5</span>)
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        x = <span class="text-blue-500">float</span>(<span class="text-red-500">5</span>)
+                    </code>
+                </div>
+            </div>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">Maiúsculas e Minúsculas</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>O nome das variáveis difere maiúsculo e minúsculo.</p>
+                <div class="bg-gray-500 p-4 rounded">
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        a = <span class="text-red-500">5</span>
+                    </code>
+                    <br>
+                    <code class="bg-gray-800 p-1 mt-4 rounded">
+                        A = <span class="text-amber-700">"Sally"</span>
+                    </code>
+                </div>
+                <p>"A" não irá sobrescrever "a".</p>
+            </div>
+            <h2 class="text-xl space-y-2 mx-4 font-bold">Nome de Variáveis</h2>
+            <div class="mx-4 text-base space-y-2">
+                <p>Uma variável pode ter um nome curto (como x ou y) ou um nome mais descritivo (idade, volume_total).
+                    Essas são as regras para nomes de variáveis no python:</p>
+                <ul class="list-disc mx-6">
+                    <li>O nome de uma variável deve começar com uma letra ou _</li>
+                    <li>O nome de uma variável não deve começar com um número</li>
+                    <li>O nome de uma variável só pode conter caracteres alfa-numéricos e underscores (A-z, 0-9, e _)</li>
+                    <li>Nomes de variáveis diferem maiúsculo e minúsculo(idade, Idade e IDADE são três variáveis diferentes)</li>
+                    <li>O nome das variáveis não pode ser nenhuma das <a href="https://www.w3schools.com/python/python_ref_keywords.asp" class="text-cyan-600">Palavras-Chave do Python</a>.</li>
+                </ul>
+            </div>
+        </section>
+        <p class="mx-auto my-10">Continue estudando no site da <a href="https://www.w3schools.com/python/default.asp" class="text-cyan-600">W3Schools</a>.</p>
+        <p class="mx-auto my-10">O conteúdo dessa página foi pego do site da <a href="https://www.w3schools.com/python/default.asp" class="text-cyan-600">W3Schools</a>.</p>
+    </main>
+</body>
+
+</html>
