@@ -759,4 +759,7 @@ video {
     margin-left: 0;
     margin-top: 25rem;
   }
+  .border-r-4 {
+    border-right: none;
+  }
 }
