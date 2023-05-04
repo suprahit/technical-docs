@@ -760,6 +760,6 @@ video {
     margin-top: 25rem;
   }
   .border-r-4 {
-    border-right: none;
+    border-right: 0;
   }
 }
